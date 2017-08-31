@@ -4,3 +4,10 @@ pipeline:
   commands:
    - npm install
    - npm run build
+
+ publish:
+  image: plugins/docker
+  username: ashmits
+  password: gthtgenmt
+  repo: ashmits/dashboard_beta
+ 
