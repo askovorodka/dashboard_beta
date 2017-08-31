@@ -1,6 +1,16 @@
+#workspace:
+#  base: /var/www
+
 pipeline:
  build:
   image: node:8-alpine
   commands:
    - npm install
-   - npm test
+   - npm run build
+
+ publish:
+  image: plugins/docker
+  username: ashmits
+  password: gthtgenmt145
+  repo: ashmits/dashboard_beta
+ 

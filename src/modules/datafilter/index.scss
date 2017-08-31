@@ -1,0 +1,68 @@
+.dateFilter{
+  z-index: 1;
+	&_res{
+    display: none;
+		line-height: 50px;
+		padding: 0 50px;
+		background: #2b2d34;
+		color: #edb140;
+		border-radius: 2px;
+		cursor: pointer;
+    &-false{
+      display: block;
+    }
+	}
+  &_chang{
+    display: none;
+    position: relative;
+    &-true{
+      display: block;
+    }
+    &_save{
+      position: absolute;
+      top: 0;
+      right: calc(100% + 10px);
+    }
+    &_dates{
+      height: 50px;
+      >div{
+        border-bottom: 1px solid #2b2d34;
+      }
+      >div:first-child{
+        border-right: 1px solid #2b2d34;
+      }
+      input{
+        display: block;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: #13151c;
+        // padding: 0 25px;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+    &_period{
+      display: flex;
+      position: absolute;
+      bottom: -35px;
+      right: 0;
+      div{
+        line-height: 30px;
+        padding: 0 10px;
+        color: #edb140;
+        background: transparent;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+        cursor: pointer;
+        &:hover{
+          background: #2b2d34;
+        }
+      }
+    }
+  }
+}
