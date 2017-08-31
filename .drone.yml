@@ -1,3 +1,6 @@
+workspace:
+  base: ./
+
 pipeline:
  build:
   image: node:8-alpine
