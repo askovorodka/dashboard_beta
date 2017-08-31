@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "concurrently \"nodemon\" \"webpack\"",
-    "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/askovorodka/dashboard_beta.git"
@@ -88,4 +83,3 @@
     "webpack-notifier": "^1.5.0"
   }
 }
-

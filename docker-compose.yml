@@ -19,6 +19,7 @@ services:
       dockerfile: DockerfileNode
     volumes:
       - .:/var/www
+    command: npm install
     ports:
       - "3334:3333"
 
