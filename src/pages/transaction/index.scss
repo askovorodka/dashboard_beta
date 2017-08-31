@@ -1,0 +1,119 @@
+.trans {
+  &_it {
+    &_zag {
+      color: #717585;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    &_params {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      > div {
+        > div:first-child {
+          color: #717585;
+          font-size: 11px;
+          text-transform: uppercase;
+          line-height: 25px;
+        }
+        > div:last-child {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+    &_note {
+      margin-bottom: 30px;
+      &_zag {
+        color: #717585;
+        line-height: 28px;
+      }
+      &_text {
+
+      }
+    }
+
+    &_elems {
+      &_zag {
+        margin-bottom: 20px;
+        span {
+          color: #717585;
+        }
+      }
+      &_its {
+        display: flex;
+        &_i {
+          width: 100px;
+          height: 100px;
+          background: #2c2c34;
+          margin: 0 10px 10px 0;
+          position: relative;
+          cursor: pointer;
+          &_name {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(#000, 0.8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.3s ease;
+            text-align: center;
+          }
+          &:hover &_name {
+            opacity: 1;
+          }
+          &_circle {
+            width: 54px;
+            height: 54px;
+            border: 3px solid transparent;
+            border-radius: 50px;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            &-1 {
+              border-color: #e01934;
+            }
+            &-2 {
+              border-color: #3a53f5;
+            }
+            &-3 {
+              border-color: #e01934;
+            }
+            &-4 {
+              border-color: #3a53f5;
+            }
+            &-5 {
+              border-color: #e01934;
+            }
+            &-6 {
+              border-color: #3a53f5;
+            }
+          }
+          &_price {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            font-size: 12px;
+            z-index: 2;
+          }
+          &_img {
+            max-width: 90%;
+            max-height: 80%;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+
+}

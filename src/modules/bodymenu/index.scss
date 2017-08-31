@@ -1,0 +1,20 @@
+.bodyMenu{
+	display: flex;
+	&_a{
+		display: block;
+		background: #2b2d34;
+		color: #edb140;
+		font-size: 16px;
+		line-height: 50px;
+		padding: 0 20px;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		&:hover{
+
+		}
+		&-active{
+			background: #edb140;
+			color: #fff;
+		}
+	}
+}

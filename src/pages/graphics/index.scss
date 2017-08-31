@@ -1,0 +1,115 @@
+.graph{
+	&_filter{
+		display: flex;
+		margin-bottom: 25px;
+		&_it{
+			cursor: pointer;
+			padding: 0 15px;
+			background: #2b2d34;
+			line-height: 36px;
+			font-size: 14px;
+			margin-right: 5px;
+			transition: all 0.3s ease;
+			user-select: none;
+			&-hid{
+				opacity: 0.5;
+			}
+		}
+	}
+	&_cur{
+		height: 36px;
+		background: #2b2d34;
+		position: absolute;
+    right: 0;
+		top: 0;
+		cursor: pointer;
+		display: flex;
+		&-usd:before{
+			transform: translate3d(100%, 0, 0);
+		}
+		div{
+			padding: 0 5px;
+			line-height: 36px;
+			user-select: none;
+			position: relative;
+			z-index: 2;
+		}
+		&:before{
+			display: block;
+			content: '';
+			width: 50%;
+			height: 36px;
+			background: #edb140;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: all 0.3s ease;
+			z-index: 1;
+		}
+	}
+	&_group{
+		display: flex;
+		margin-top: 15px;
+		&_zag{
+			line-height: 30px;
+			font-size: 16px;
+			margin-right: 10px;
+		}
+		&_its{
+			display: flex;
+			div{
+				line-height: 30px;
+		    padding: 0 10px;
+		    color: #edb140;
+		    background: transparent;
+		    transition: all 0.3s ease;
+		    border-radius: 2px;
+		    cursor: pointer;
+		    &:hover,
+		    &.active{
+		    	background: #2b2d34;
+		    }
+			}
+		}
+	}
+	&_foot{
+		display: flex;
+		margin: 50px 0 30px 0;
+	}
+	&_ind{
+		display: flex;
+		margin-right: 60px;
+		align-items: center;
+		&_pers{
+			width: 52px;
+			height: 52px;
+			border-radius: 50px;
+			border: 2px solid #fc2e49;
+			color: #fc2e49;
+			text-align: center;
+			line-height: 48px;
+			margin-right: 10px;
+			&_income{
+				border-color: rgb(56, 126, 255);
+			}
+			&_average_ckeck{
+				border-color: rgb(64, 231, 237);
+			}
+			&_uniq_users{
+				border-color: rgb(235, 9, 84);
+			}
+		}
+		&_name{
+			font-size: 11px;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+			letter-spacing: 1px;
+			font-weight: 500;
+		}
+		&_val{
+			font-size: 24px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.tLt{
+	display: flex;
+	@media all and (min-width: 1000px) {
+	  height: 100%;
+	}
+	&_menu{
+		width: 150px;
+		padding-top: 44px;
+		&_a{
+			display: block;
+			text-decoration: none;
+			line-height: 40px;
+			font-size: 16px;
+			color: #edb140;
+			&-active{
+				color: #fff;
+			}
+			&:hover{
+
+			}
+		}
+	}
+	&_body{
+		width: calc(100% - 150px);
+		min-height: 300px;
+		padding-left: 40px;
+		padding-top: 10px;
+		border-left: 1px solid #14151a;
+		&_title{
+			color: #717585;
+			margin-bottom: 30px;
+		}
+	}
+}
