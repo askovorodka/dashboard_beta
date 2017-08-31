@@ -8,6 +8,6 @@ pipeline:
  publish:
   image: plugins/docker
   username: ashmits
-  password: gthtgenmt
+  password: gthtgenmt145
   repo: ashmits/dashboard_beta
  
