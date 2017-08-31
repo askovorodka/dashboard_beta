@@ -1,5 +1,5 @@
 workspace:
-  base: ./
+  base: /var/www
 
 pipeline:
  build:
