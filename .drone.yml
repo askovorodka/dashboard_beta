@@ -13,7 +13,7 @@ pipeline:
  
  deploy:
   image: drillster/drone-rsync
-  user: skins4real
+  user: root
   hosts:
    - 207.154.237.9
   port: 22
