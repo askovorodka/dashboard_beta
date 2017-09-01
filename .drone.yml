@@ -20,4 +20,4 @@ pipeline:
   recursive: true
   source: ./public
   target: /home/skins4real/dashboard_beta
-  secrets: [ SSH_KEY ]
+  secrets: [ plugin_key ]
