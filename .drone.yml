@@ -1,6 +1,3 @@
-#workspace:
-#  base: /var/www
-
 pipeline:
  build:
   image: node:8-alpine
@@ -14,3 +11,13 @@ pipeline:
   password: gthtgenmt145
   repo: ashmits/dashboard_beta
  
+ deploy:
+  image: drillster/drone-rsync
+  user: skins4real
+  hosts:
+   - 207.154.237.9
+  port: 22
+  recursive: true
+  source: ./public
+  target: /home/skins4real/dashboard_beta
+  secrets: [ plugin_key ]
