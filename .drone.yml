@@ -11,7 +11,6 @@ pipeline:
   password: gthtgenmt145
   repo: ashmits/dashboard_beta
 
- 
  deploy:
   image: drillster/drone-rsync
   user: skins4real
